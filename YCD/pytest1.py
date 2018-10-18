@@ -12,4 +12,4 @@ print(list[0],list[len(list)-1],len(list)-1)
 del list[0]
 print(list[0],list[len(list)-1],len(list)-1)
 
-print(list.count(4),list.index(4,1,8))
+print(list.count(4),list.index(4,1,2))
