@@ -1,0 +1,90 @@
+python
+行业
+大数据、人工智能、区块链、物联网
+1、大数据平台---150万--java
+2、数据分析（科学计算）  > 150万---越老越好
+
+人工智能需要大数据---go（google）---python
+
+区块链(去中心化，分布式账本)---黑金|c、java、python、go
+物联网---智能电话、穿戴电子设备、智能家居---终端(c|python)————》网络--javacpythnogo
+
+java VS python  python应用更广泛
+C编译型语言---快---跨平台性不好---exe(二进制文件)
+java编译型语言
+python解释型语言---跨平台性高---把文件中的命令翻译成二进制命令，然后cpu在执行
+
+
+当今IT世界3大软件公司
+1、微软  windows  office sqlserver（纳斯达克）---比尔盖茨
+2、oracle（甲骨文） oracle数据库、java、mysql。。。。---拉里。艾莉森
+3、IBM（蓝色巨人） （thinkpad） java\db2...服务器（刀片式服务器）
+
+互联网公司
+google---无人驾驶、人工领域---改变人类的生活方式--andorid---go---热气球计划(手机通信靠基站--定位)--mybatis
+
+市值最高的科技公司
+苹果---乔布斯(产品经理)
+
+社交网络公司
+facebook----python----
+
+
+马斯克-----现实版的《钢铁侠》
+1、特斯拉
+2、支付paypal
+3、研发火箭-----
+
+
+BAT
+
+编程必备的一些技能
+1、硬件
+	cpu、主板，内存......
+2、软件
+	系统软件---dos\windows\linux\unix\mac\android\ios
+	应用软件---office\qq\英雄联盟
+	图形化界面、命令行方式
+3、计算机语言
+	第一代语言
+		0101011010---打孔机---机器语言
+	第二代语言
+		汇编
+	第三代语言
+		c\c++\c#\php\java\python
+4、快捷键
+	键盘
+	ctrl
+	shirt  SA
+	alt---快捷键--快速的打开一些功能
+	Tab---退格键(相当于4个空格)	
+	capslock---大小写锁定键AAAAAAqqqqq
+	prtsc---截屏----写文档的时候需要用到的---(1)需求调研(2)概要设计(3)详细设计(4)编码(5)测试(6)实施
+	home----行首
+	end-----行尾
+	insert--状态切换(插入|修改)
+	delete--删除
+	shirt+home|end
+	shirt+delete----直接删除（不进回收站）
+	alt+prtsc---截取当前获得焦点的窗口
+	ctrl+a---全选
+	ctrl+c---复制
+	ctrl+v---粘贴
+	ctrl+x---剪切
+	ctrl+z---后退|撤回
+	ctrl+y---前进
+	ctrl+s---保存
+	win+d---显示桌面
+	win+r---打开运行窗口
+	win+e---打开资源管理器(我的电脑)
+5、dos命令
+	dir 显示当前目录下的文件及文件夹
+	cd .. 后退一层路径
+	cd 文件夹   进入文件夹
+	cd \   返回到当前路径下的根路径
+	命令 /？  打开帮助
+	md|mkdir 创建文件夹
+	rd|rmdir 删除文件夹
+	del 文件名     删除文件---不经过回收站
+	cls 清屏
+	exit 退出dos窗口
