@@ -65,9 +65,11 @@ print("==="*20)
 # and(短路与) or(短路或) not
 True and print("111") #左边是True，会运行右边所以print执行了  True and True = True    True and False = False    False and True = False    False and False = False
 False and print("222")#左边是False，右边不执行
-# print("333") and True
+print("333") and True
+print("3334") and False
 False or print("444")# False or False = False   True or False = True   False or True = True    True or True = True
 True or print("555")
+print("5551") or False
 
 print("==="*20)
 #非逻辑运算

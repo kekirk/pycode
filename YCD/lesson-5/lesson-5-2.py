@@ -73,7 +73,11 @@ print((a != b) ==(a != c) == (c == a))
 print(not(a > b))
 #20
 x = 5
+print("x =",x)
 x /= x + x
+print(x)
+x /= x + x
+print(x)
 x *= x
 print(x)
 #21
