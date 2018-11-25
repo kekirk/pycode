@@ -60,8 +60,8 @@
 # 	for i in range(a):
 # 		line=""
 # 		for j in range(i+1):
-# 			line = line+str((i+1))+"*"+str((j+1))+"  "
-# 		print line
+# 			line = line+str((j+1))+"*"+str((i+1))+"  "
+# 		print (line)
 
 # fun(9)
 
@@ -72,6 +72,7 @@
 # for i in range(100):
 # 	if (i+1)%6==0:
 # 	 	n = n+1
+# 	 	print(i)
 # print(n)
 
 
@@ -267,138 +268,138 @@
 
 
 #23
-def fun(a):
-	n = True
-	if a == 1 or a==2:
-		print a
-	else:
-		for i in range(2,a):
-			if a%i==0:
-				n = False
-				print " not"
-				break
-		if n:
-			print "yes"
+# def fun(a):
+# 	n = True
+# 	if a == 1 or a==2:
+# 		print a
+# 	else:
+# 		for i in range(2,a):
+# 			if a%i==0:
+# 				n = False
+# 				print " not"
+# 				break
+# 		if n:
+# 			print "yes"
 
-fun(4)
+# fun(4)
 
-#24
-def fun(a):
-	b = str(a)
-	n = 0
-	e = 0
-	for i in b:
-		if i> e:
-			e = i
-		if int(i)==0:
-			n = n+1
-	print(n)
-	print(e)
+# #24
+# def fun(a):
+# 	b = str(a)
+# 	n = 0
+# 	e = 0
+# 	for i in b:
+# 		if i> e:
+# 			e = i
+# 		if int(i)==0:
+# 			n = n+1
+# 	print(n)
+# 	print(e)
 
-fun(10034)
-
-
-
-#25
-a = 1020;
-n = 0
-while a>0:
-	n = n+1
-	a=a/2-2
-print(n)
-
-
-#26
-e=1;
-for i in range(9):
-	e = (e+1)*2
-
-print(e)
-
-
-#27
-def fun(c):
-	n = 0
-	while n>5:
-		n = n+1
-		if c<0:
-			break
-
-
-#29
-def fun(cs):
-	sum=0
-	n = 0
-	for c in cs:
-		if c>=80:
-			n = n+1
-			sum = sum + c
-		else:
-			continue
-	print(sum/n)
-
-fun([80.0,87.0,83.0,70.0,60.0])
+# fun(10034)
 
 
 
-#30
-for n in range(1,101):
-	for j in range(1,101-n):
-		for e in range(1,101-n-j):
-			if (n+j+e) == 100 and 5*n+3*j+(1/3*e)==100:
-				print(n,j,e)
-
-#36
-def fun(n):
-	s = 0
-	for i in range(2,n+2):
-		s = s + i/(i-1)
-	print(s)
-
-fun(8)
+# #25
+# a = 1020;
+# n = 0
+# while a>0:
+# 	n = n+1
+# 	a=a/2-2
+# print(n)
 
 
-#37
-d = 13
-n = 0
-while d<15:
-	n = n+1
-	d = d*(1+0.07)
-print(n)
+# #26
+# e=1;
+# for i in range(9):
+# 	e = (e+1)*2
+
+# print(e)
+
+
+# #27
+# def fun(c):
+# 	n = 0
+# 	while n>5:
+# 		n = n+1
+# 		if c<0:
+# 			break
+
+
+# #29
+# def fun(cs):
+# 	sum=0
+# 	n = 0
+# 	for c in cs:
+# 		if c>=80:
+# 			n = n+1
+# 			sum = sum + c
+# 		else:
+# 			continue
+# 	print(sum/n)
+
+# fun([80.0,87.0,83.0,70.0,60.0])
 
 
 
-#38
-n = 1
-for i in range(2,51):
-	n = n+(i-1)
+# #30
+# for n in range(1,101):
+# 	for j in range(1,101-n):
+# 		for e in range(1,101-n-j):
+# 			if (n+j+e) == 100 and 5*n+3*j+(1/3*e)==100:
+# 				print(n,j,e)
 
-print(n)
+# #36
+# def fun(n):
+# 	s = 0
+# 	for i in range(2,n+2):
+# 		s = s + i/(i-1)
+# 	print(s)
+
+# fun(8)
+
+
+# #37
+# d = 13
+# n = 0
+# while d<15:
+# 	n = n+1
+# 	d = d*(1+0.07)
+# print(n)
 
 
 
-#42
-n = 1000
-e =0
-while n>=38:
-	e=e+1
-	n= n-38
-print(e)
-print(n)
+# #38
+# n = 1
+# for i in range(2,51):
+# 	n = n+(i-1)
 
-print(38*26)
+# print(n)
 
-#43
-j = 49
-e = 1
-while j>=1:
-	j = j - 1
-	e = e + 1
-	if j*2+e*4==160:
-		print j
-		print e
 
-print(20*2+30*4)
+
+# #42
+# n = 1000
+# e =0
+# while n>=38:
+# 	e=e+1
+# 	n= n-38
+# print(e)
+# print(n)
+
+# print(38*26)
+
+# #43
+# j = 49
+# e = 1
+# while j>=1:
+# 	j = j - 1
+# 	e = e + 1
+# 	if j*2+e*4==160:
+# 		print j
+# 		print e
+
+# print(20*2+30*4)
 
 
 

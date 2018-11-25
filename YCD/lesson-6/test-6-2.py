@@ -36,19 +36,19 @@ while i <=19:
 
 i = 2
 while i < 100:
-	# print("Number is %d" %i)
+	print("Number is %d" %i)
 	is_prime = True
 	j = 2
-	# ti = 0
+	ti = 0
 	while j < i:
 		if i % j==0:
 			is_prime = False
-			# print("j=%d"%j, " ", end="")
-			# ti+=1
-			break
+			print("j=%d"%j, " ", end="")
+			ti+=1
+			# break
 		j += 1
 	if is_prime:
 		print("%d is Prime Number "%i)
-	# else:
-		# print("time is %d"%ti)
+	else:
+		print("time is %d"%ti)
 	i += 1
