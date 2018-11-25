@@ -10,7 +10,7 @@ if is_prime:
 else:
     print(a,"is NOT Prime Number.")
 
-i=0
-while i<5:
-    print("*")
-    i+=1
+# i=0
+# while i<5:
+#     print("*")
+#     i+=1
