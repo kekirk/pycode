@@ -256,17 +256,64 @@
 
 # fun(45)
 
-# 23
-def function(a):
-    isPrime = True
-    for i in range(2,a):
-        if a%i==0:
-            isPrime = False
-            break
-    if isPrime:
-        print("%d is Prime Number" %a)
-    else:
-        print("%d is NOT Prime Number" %a)
+# # 23
+# def function(a):
+#     isPrime = True
+#     for i in range(2,a):
+#         if a%i==0:
+#             isPrime = False
+#             break
+#     if isPrime:
+#         print("%d is Prime Number" %a)
+#     else:
+#         print("%d is NOT Prime Number" %a)
 
-n = int(input("请输入数字："))
-function(n)
+# n = int(input("请输入数字："))
+# function(n)
+
+# # 24
+# def function(a):
+#     b = str(a)
+#     n = 0
+#     f = 0
+#     for i in b:
+#         i = int(i)
+#         if i == 0:
+#             n +=1
+#         if i > f :
+#             f = i
+#     print("Number of 0 is:",n)
+#     print("Max Number is:",f)
+
+# n = int(input("请输入数字："))
+# function(n)
+
+# # 25
+# a = 1020
+# n = 0
+# while a > 0:
+#     n +=1
+#     a = a/2 - 2
+# print(n)
+
+# # 26
+# e = 1
+# for i in range(9):
+#     e = (e+1) * 2
+# print(e)
+
+# 28
+def function():
+    i = 1
+    sum = 0
+    while i < 6:
+        n = int(input("请输入成绩%d："%i))
+        if n < 0:
+            print("成绩录入错误！")
+            break
+        sum = sum + n
+        i += 1
+    if i == 6:
+        print("平均成绩为：",sum/5)
+
+function()

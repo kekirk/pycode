@@ -326,19 +326,19 @@
 # 			break
 
 
-# #29
-# def fun(cs):
-# 	sum=0
-# 	n = 0
-# 	for c in cs:
-# 		if c>=80:
-# 			n = n+1
-# 			sum = sum + c
-# 		else:
-# 			continue
-# 	print(sum/n)
+#29
+def fun(cs):
+	sum=0
+	n = 0
+	for c in cs:
+		if c>=80:
+			n = n+1
+			sum = sum + c
+		else:
+			continue
+	print(sum/n)
 
-# fun([80.0,87.0,83.0,70.0,60.0])
+fun([80.0,87.0,83.0,70.0,60.0])
 
 
 
