@@ -302,18 +302,73 @@
 #     e = (e+1) * 2
 # print(e)
 
-# 28
-def function():
-    i = 1
-    sum = 0
-    while i < 6:
-        n = int(input("请输入成绩%d："%i))
-        if n < 0:
-            print("成绩录入错误！")
-            break
-        sum = sum + n
-        i += 1
-    if i == 6:
-        print("平均成绩为：",sum/5)
+# # 28
+# def function():
+#     i = 1
+#     sum = 0
+#     while i < 6:
+#         n = int(input("请输入成绩%d："%i))
+#         if n < 0:
+#             print("成绩录入错误！")
+#             break
+#         sum = sum + n
+#         i += 1
+#     if i == 6:
+#         print("平均成绩为：",sum/5)
 
-function()
+# function()
+
+# # 30
+# for i in range(1,101):
+#     for j in range(1,101-i):
+#         for k in range(1,101-i-j):
+#             if i+j+k == 100 and i*5+j*3+k*1/3==100:
+#                 print(i,j,k)
+
+# # 36
+# def function(n):
+#     sum = 0
+#     for n in range(1,n+2):
+#         sum = sum + (n+1)/n
+#         pass
+#     print(sum)
+#     pass
+
+# function(8)
+
+# # 37
+# n = 0
+# i = 13
+# while i < 15:
+#     i = i + i * 0.07
+#     print(i)
+#     n += 1
+#     pass
+# print(n)
+
+# # 38
+# i = 1
+# n = 0
+# s = 0
+# while n < 50:
+#     i = i + n
+#     n += 1
+#     s = s + i
+#     print(n,i,s)
+# print(s)
+
+# # 42
+# n = 0
+# m = 0
+# while m <= 1000:
+#     n += 1
+#     m = 38 * n
+# print(n-1,m-38)
+
+# 43
+n = 1
+while n < 50:
+    # print(n)
+    if n*2+(50-n)*4 == 160:
+        print("鸡有%d只,兔有%d只。"%(n,(50-n)))
+    n += 1
