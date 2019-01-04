@@ -1,0 +1,223 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>jsDemo</title>
+		<script type="text/javascript" src="outer.js"></script>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			function displayDate(){
+				document.getElementById('demo').innerHTML=Date();
+			};
+			//alert(Date());
+			function writeText(){
+				document.getElementById("text").innerHTML="hello world";
+			};
+			document.write("<h1>this is a title</h1>");
+			function change() {
+				alert("i am changed")
+			}
+		</script>
+		<p id="demo"></p>
+		<p id="text">aaa</p>
+		<button type="button" onclick="displayDate()">显示日期</button>
+		<button type="button" onclick="writeText()">test</button>
+		<script type="text/javascript">
+			//writeText();
+			outfun();
+			//window.alert("window.alert");
+			console.log("this is a console log");
+			//常量  --number --string
+			//Array
+			//Object
+			//function
+			//变量
+			var x,length,o
+			x=function xfun(){console.log("xlog")}
+			x();
+			o={name:"myname",myfun:x}
+
+			var a = 1; //局部变量
+			b = 2; //全局变量
+
+
+			//运算符
+			//数据类型变换
+			typeof(o)
+			//返回函数
+			function getInt(){
+				return 5;
+			}
+			//函数参数
+			function argsfun(a,b){
+				return a+b
+			}
+			//变量名大小写区分
+
+			//语句
+			document.write("this is one \
+				line");
+			//single line
+			/*
+				multi line 
+			*/
+			//数据类型
+			var fn = 1.00;
+			var inum = 1;
+			var x = true;
+			var y = false;
+			var cars = [11,12,14,16]
+			var apples =new Array();
+			apples[0]="apple1";
+			apples[1]="apple2";
+
+			//Undefined null
+			var u = undefined;
+			var n = null;
+
+			//statement
+			var s = new String;
+			var n = new Number;
+			var y = new Boolean;
+			var cs = new Array;
+			var p = new Object;
+
+			//作用域
+			var arg = 1;
+
+			function space(){
+				console.log(arg);
+			}
+			space(); //1
+			function space1(){
+				var arg = 4;
+				console.log(arg);
+			}
+			space1() //4
+			console.log(arg); //1
+			function space2(){
+				arg = 4;
+			}
+			space2()
+			console.log(arg);  //4
+
+			//let
+			console.log("*****************************")
+			var arg=1;
+			{
+				var arg=4
+				console.log(arg)
+			}
+			console.log(arg);
+			var arg=1;
+			{
+				let arg=4
+				console.log(arg)
+			}
+			console.log(arg);
+
+			//event
+			//onclick
+			//onchange
+			//onmouseover
+			//onkeydown
+			//onload
+			function click(){
+				document.getElementById("c").innerHTML="changed"
+			}
+			function over() {
+				document.getElementById("mo").innerHTML="over me"
+			}
+			function leave() {
+				document.getElementById("mo").innerHTML="leave me"
+			}
+			function down() {
+				document.getElementById("kd").innerHTML="inputting..."
+			}
+		</script>
+		<button type="button" onclick="writeText()">onclick</button>
+		<input type="text" id="inchange" onchange="change()" />
+		<h1 id="mo"></h1>
+		<p onmouseover="over()" onmouseleave="leave()">when your mouse mover over me , what will do?</p>
+		<h1 id="kd"></h1>
+		<input type="text"  onkeydown="down()" />
+		<script type="text/javascript">
+			//三目运算
+			function three(age){
+				console.log((age>=18) ? "man":"boy")
+			}
+			three(19);
+
+			if(18>10){
+				console.log(18);
+			}
+
+			if(18>20){
+				console.log(18)
+			}else{
+				console.log(20)
+			}
+
+			if(18>0 && 18<10){
+				console.log("0<18<10")
+			}else if(18>=10 && 18<20){
+				console.log("10<=18<20")
+			}else{
+				console.log("18>=20")
+			}
+
+			var n = 10;
+			switch(n){
+				case 1:
+					console.log("n==1");
+					break;
+				case 2:
+					console.log("n==2");
+					break;
+				default:
+					console.log("n is not 1 and not 2");
+			}
+
+			for(var i=0;i<10;i++){
+				document.write("<p>this is "+i+"</p>")
+			}
+			var a = [1,2,3]
+			for(x in a){
+    			console.log(x)
+			}
+			var o = {a:1,b:2,c:"c"}
+			for(p in o){
+				console.log(o[p])
+			}
+
+			var i = 1;
+			while(i<5){
+				
+				console.log(i)
+				i++;
+			}
+			console.log("==============================")
+			var i=1;
+			do{
+				
+				console.log(i)
+				i++;
+			}while(i<5)
+			var i=1;
+			do{
+				i++;
+				if(i==2){
+					continue;
+				}
+				if(i==4){
+					break;
+				}
+				console.log(i)
+				
+			}while(i<5)
+
+		</script>
+
+	</body>
+</html>

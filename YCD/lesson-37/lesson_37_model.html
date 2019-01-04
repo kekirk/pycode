@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+<title>model模型</title>
+<style type="text/css">
+	input.ng-invalid {
+		background-color: red; 
+	}
+	
+	input.ng-valid {
+		background-color: green; 
+	}
+
+	input.ng-empty {
+		background-color: blue; 
+	}
+
+</style>
+</head>
+<body>
+
+<div ng-app="modelApp" ng-controller="appController" ng-init=""
+	name="app1">
+	
+	<h1>Open</h1>
+   	<p>{{ open }}</p>
+   	<h1>High</h1>
+   	<p>{{high}}</p>
+   	<h1>Low</h1>
+   	<p>{{low}}</p>
+   	<h1>Close</h1>
+   	<p>{{close}}</p>
+
+	
+   	<hr>
+   	<form name="form0">
+   	<p>Open:<input type="number" name="open" ng-model="open" required></p>
+   	<type-directory></type-directory>
+   	<p>High:<input type="number" name="high" ng-model="high" required></p>
+   	<type-directory></type-directory>
+   	<p>Low:<input type="number" name="low" ng-model="low" required></p>
+   	<type-directory></type-directory>
+   	<p>Close:<input type="number" name="close" ng-model="close" required></p>
+   	<type-directory></type-directory>
+   	</form>
+   	<form name="form1"><!--  form中有效  -->
+   		<h1>angular model type</h1>
+   		<select>
+   			<option>number</option>
+   			<option>email</option>
+   			<option>date</option>
+   		</select>
+
+   		<p> Email:
+   		<input type="email" name="myAddress" ng-model="data1">
+    	<span ng-show="form1.myAddress.$error.number">不是一个合法数字</span>
+		</p>
+   	</form>
+   	<hr>
+   	<h1>status of model</h1>
+   	<p>valid:{{form1.myAddress.$valid}}</p>
+   	<p>dirty:{{form1.myAddress.$dirty}}</p>
+   	<p>touched:{{form1.myAddress.$touched}}</p>
+   	<p>error:{{form1.myAddress.$error}}</p>
+</div>
+
+<script type="text/javascript">
+	var app = angular.module("modelApp",[]);
+	app.controller("appController",function($scope){
+		$scope.open=12.4;
+		$scope.high=14.7;
+		$scope.low=11.1;
+		$scope.close=13;
+	})
+	/*app.directive("typeDirectory",function(){
+		return {
+			template:"<span><select> \
+			<option>number</option> \
+			<option>email</option> \
+   			<option>date</option> \
+   			</select></span> \
+			"
+		}
+	})*/
+</script>
+</body>
+</html>

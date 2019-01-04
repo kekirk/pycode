@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+<title>Expression表达式</title>
+</head>
+<body>
+
+<div ng-app="expressionApp" ng-controller="appController">
+	<h1>运算</h1>
+   	<p>{{ 5+5}}</p>
+   	<h1>字符串</h1>
+   	<p>{{"hello"+" "+"world"}}</p>
+   	<h1>对象</h1>
+   	<p>{{ person.name }}</p>
+   	<h1>数组</h1>
+   	<p>{{ arr[0] }}</p>
+</div>
+
+<script>
+	var app = angular.module('expressionApp', []);
+	console.log(app)
+	app.controller("appController",function($scope) {
+		$scope.person={"name":"xiaoming"}
+		$scope.arr=[1,2,3,4,5]
+	});
+</script>
+</body>
+</html>

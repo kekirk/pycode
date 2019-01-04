@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+<title>filter过滤器</title>
+</head>
+<body>
+
+<div ng-app="filterApp" ng-controller="appController">
+   <p>大写:{{ string| uppercase}}</p>
+   <p>小写:{{string| lowercase}}</p>
+   <p>货币:{{ price * quantity|currency}}</p>
+   <ul>
+   	<li ng-repeat="x in person|orderBy:'id'">
+   		{{x.id+" "+x.name}}
+   	</li>
+   </ul>
+</div>
+	
+<script>
+	var app = angular.module('filterApp', []);
+	app.controller("appController",function($scope) {
+		$scope.string="hello world"
+		$scope.quantity = 1;
+    	$scope.price = 9.99;
+    	$scope.person=[
+    		{id:5,name:"xiaoming"},
+    		{id:2,name:"xiaohong"},
+    		{id:1,name:"xiaozhang"}
+    	]
+	});
+</script>
+</body>
+</html>

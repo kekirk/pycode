@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+<title>directive指令</title>
+</head>
+<body>
+
+<div ng-app="commanApp" ng-controller="appController"
+	ng-init="initkey='initvalue'">
+	<p>指令就是类似于linux终端命令，就是用一条命令代替很多代码程序</p>
+	<h1>multi count</h1>
+	<p>data1:<input type="text" ng-model="data1"></p>
+	<p>data2:<input type="text" ng-model="data2"></p>
+	<p>result: {{ data1 * data2 }}</p>
+
+	<h1>repeat option</h1>
+	<p ng-repeat="x in arr">{{ x }}</p>
+
+	<h1>DIY directive</h1>
+	<diy-directive></diy-directive>
+</div>
+	
+<script>
+	var sp;
+	var app = angular.module('commanApp', []);
+	console.log(app)
+	app.controller("appController",function($scope) {
+		sp=$scope;
+		$scope.person={"name":"xiaoming"}
+		$scope.arr=[1,2,3,4,5]
+	});
+	app.directive("diyDirective",function(){
+		return {
+			template : "<p>reaction diyDirective</p>"
+		};
+	});
+
+</script>
+</body>
+</html>
